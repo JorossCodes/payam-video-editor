@@ -47,16 +47,15 @@ export default class Editor extends Component {
 	render() {
 		return (
 			<>
-				<header>
+				{/* <header>
 					{this.state.loading && <LoadingDialog/>}
 					{this.state.showSubmitDialog && <SubmitDialog project={this.state.project} onClose={this.closeSubmitDialog} onProcessing={this.startProcessing} fetchError={this.openFetchErrorDialog}/>}
 					{this.state.showFetchError && <FetchErrorDialog msg={this.state.fetchError} onClose={this.closeFetchErrorDialog}/>}
 					<a href={'/'}><button className="error"><i className="material-icons" aria-hidden="true">arrow_back</i>Zrušit úpravy</button></a>
 					<div className="divider"/>
-					{/*<button><i className="material-icons" aria-hidden="true">language</i>Jazyk</button>*/}
-					{/*<button><i className="material-icons" aria-hidden="true">save_alt</i>Exportovat</button>*/}
+
 					<SubmitToolbar openSubmitDialog={this.openSubmitDialog} progress={this.state.processing} project={this.state.project}/>
-				</header>
+				</header> */}
 				<main>
 					<div>
 						<Sources
@@ -68,7 +67,7 @@ export default class Editor extends Component {
 							fetchError={this.openFetchErrorDialog}
 						/>
 						<div id='preview'>
-							<h3><i className="material-icons" aria-hidden={true}> movie_filter </i>Náhled</h3>
+							<h3><i className="material-icons" aria-hidden={true}> movie_filter </i>Preview</h3>
 							<video/>
 							<br/>
 							<div className="prev-toolbar">
